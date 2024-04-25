@@ -9,9 +9,6 @@ from sumy.utils import get_stop_words
 app = Flask(__name__)
 
 @app.route('/')
-def index():
-    return render_template('index.html')
-
 def fetch_content(url):
     try:
         response = requests.get(url)
